@@ -1,5 +1,17 @@
-export class Module {
-    constructor(config){        //config - object with info about modules we have
+import { WFMModule } from "../framework/index";
+import { appComponent } from "./app.component"
+import {appHeader} from "./common/app.header";
 
+class AppModule  extends WFMModule {
+    constructor(config){
+        super(config);
     }
 }
+
+export const appModule = new AppModule({
+    components: [
+        appHeader
+    ],
+    bootstrap: appComponent,
+    routes: appRoutes
+});
