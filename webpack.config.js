@@ -17,6 +17,24 @@ module.exports = {
     devServer: {
         port: 4200
     },
+module: {
+rules: [
+    {
+    test: /\.jsx?$/,
+        loader: 'babel-loader',
+    exclude: /node_modules/,
+    query: {
+    presets: ['es2015']
+}
+}
+]
+},
+
+    resolve: {
+        alias: {
+            'framework': path.join(__dirname, 'src/framework')
+        }
+    },
 
     plugins: [
         new HtmlWebpackPlugin({

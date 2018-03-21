@@ -9,10 +9,69 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css" class="css">
     <title>Native Framework</title>
-</head>
-<body>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        
+        body {
+            background: linear-gradient(to top, #fcfcfc ,#80cbc4) no-repeat;
+        }
 
-<h1>Test</h1>
+        .preloader-wrapper{
+        position: absolute;
+            left: 47%;
+            top: 47%
+        }
+
+        </style>
+</head>
+<body id="body">
+
+
+<app-root>
+    <div class="preloader-wrapper big active" >
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+    </div>
+</app-root>
 
 <script type="text/javascript" src="bundle.js"></script></body>
 </html>
